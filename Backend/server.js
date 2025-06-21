@@ -5,7 +5,7 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3007;
 
 // Middleware
 app.use(cors());
@@ -16,7 +16,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'postgres',
     database: 'leave_management',
-    password: 'admin1023',
+    password: 'admin234',
     port: 5432,
 });
 
@@ -294,5 +294,6 @@ app.get('/api/certificate/:id', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on port http://3.108.193.252:${port}`);
+    console.log(`Server running on port http://13.201.36.187:${port}`);
+
 });
